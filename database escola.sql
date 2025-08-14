@@ -57,3 +57,16 @@ foreign key (id_aluno) references aluno(id_aluno)
 );
 
 show tables;
+
+-- insert dados professor
+insert into professor (id_professor,nome,especialidade,salario,uf) values
+(1,'joão da silva','banco de dados','2500.00','PR');
+
+-- insert disciplinas
+insret into disciplinas(nome,id_professor,carga_horaria) values
+('Banco de dados iniciante',1,60);
+
+-- Alunos
+insert into aluno (nome,sexo,data_nascimento,nota_final,ativo) values
+('Marinho da silva','m',2007-05-10, 8.5, true);
+
